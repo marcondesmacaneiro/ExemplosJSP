@@ -54,7 +54,7 @@ public class CadastroCliente extends HttpServlet {
         
         request.setAttribute("mensagem", mensagem);
         
-        RequestDispatcher dispatcher = request.getRequestDispatcher("/jsp/clienteCompleto.jsp");
+        RequestDispatcher dispatcher = request.getRequestDispatcher("/marcondes/clienteCompleto.jsp");
         dispatcher.forward(request, response);
         
     }

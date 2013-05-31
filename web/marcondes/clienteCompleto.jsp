@@ -1,4 +1,4 @@
-<%@page import="br.edu.unidavi.bsi.model.Cliente" %>
+<%@page import="br.edu.unidavi.bsi.marcondes.model.Cliente" %>
 
 <!-- 
 1. Obtenha o atributo do escopo de sessão com o nome "cliente", 

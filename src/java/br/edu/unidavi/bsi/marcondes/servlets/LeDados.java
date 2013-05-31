@@ -37,7 +37,7 @@ public class LeDados extends HttpServlet {
         /*
          * 1. Encaminhe a requisição para a página JSP indicada no diagrama.
          */
-        RequestDispatcher dispatcher = request.getRequestDispatcher("/jsp/enderecoCliente.jsp");
+        RequestDispatcher dispatcher = request.getRequestDispatcher("/marcondes/enderecoCliente.jsp");
         dispatcher.forward(request,response);
         
     }

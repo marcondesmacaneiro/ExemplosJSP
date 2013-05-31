@@ -15,7 +15,7 @@
                 </tr>
             </table>
         
-            <form action='<%=request.getContextPath()%>/cadastrarCliente' method='post'>
+            <form action='<%=request.getContextPath()%>/CadastroClienteMarcondesFinaliza' method='post'>
                 <fieldset>
                     <legend>Endere&ccedil;o</legend>
                     <table>
