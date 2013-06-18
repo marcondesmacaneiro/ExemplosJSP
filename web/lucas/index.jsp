@@ -1,9 +1,3 @@
-<%-- 
-    Document   : index
-    Created on : May 21, 2013, 9:48:33 PM
-    Author     : marcondes
---%>
-
 <%@page contentType="text/html" pageEncoding="ISO-8859-1"%>
 <!DOCTYPE html>
 <html>
@@ -12,6 +6,8 @@
         <title>JSP Page</title>
     </head>
     <body>
-        <h1>Hello World!</h1>
+       <input type="button" value="Novo Cadastro" onclick='document.location.href = "<%=request.getContextPath()%>/lucas/cadastroCliente.jsp"'>
+       <br>
+       <input type="button" value="Consulta Clientes" onclick='document.location.href = "<%=request.getContextPath()%>/BuscaDadosLucas"'>
     </body>
 </html>
