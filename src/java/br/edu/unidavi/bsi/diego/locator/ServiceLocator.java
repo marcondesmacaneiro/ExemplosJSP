@@ -7,9 +7,9 @@ import br.edu.unidavi.bsi.diego.exception.UnidaviBsiException;
 
 public class ServiceLocator {
     
-    private String databaseURL = "jdbc:mysql://localhost:3306/aw";
+    private String databaseURL = "jdbc:mysql://127.0.0.1:3306/aw";
     
-    private String databasePassword = "root";
+    private String databasePassword ="";
     
     private String databaseUser = "root";
     

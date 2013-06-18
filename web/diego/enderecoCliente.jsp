@@ -5,8 +5,8 @@
         <link type='text/css' rel='stylesheet' href='<%=request.getContextPath()%>/css/tabelas.css'>
     </head>
     <body>
-       <div class='tabelaGC'>
-           
+        <div class='tabelaGC'>
+
             <table>
                 <tr>
                     <td class='coluna1'></td>
@@ -14,7 +14,7 @@
                     <td class='coluna3'></td>
                 </tr>
             </table>
-        
+
             <form action='<%=request.getContextPath()%>/CadastroClienteDiegoFinaliza' method='post'>
                 <fieldset>
                     <legend>Endere&ccedil;o</legend>
@@ -41,6 +41,7 @@
                     <input type='image' src='<%=request.getContextPath()%>/images/salvar.gif'>
                 </fieldset>
             </form>
-        </div>                        
+        </div> 
+
     </body>
 </html>

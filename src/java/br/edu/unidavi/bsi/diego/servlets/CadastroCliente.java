@@ -19,15 +19,15 @@ import javax.servlet.http.HttpServletResponse;
  *
  * @author marcondes
  */
-@WebServlet(name = "CadastroCliente", urlPatterns = {"/CadastroClienteDiegoFinaliza"})
+@WebServlet(name = "CadastroClienteDiego", urlPatterns = {"/CadastroClienteDiegoFinaliza"})
 public class CadastroCliente extends HttpServlet {
 
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
-    throws ServletException, IOException {
-        
+            throws ServletException, IOException {
+
         // Leitura do cliente na session
         Cliente cliente = (Cliente) request.getSession().getAttribute("cliente");
-        
+
         /* Leitura dos parametros da Request */
         String rua = request.getParameter("rua");
         String numero = request.getParameter("numero");
@@ -35,7 +35,7 @@ public class CadastroCliente extends HttpServlet {
         String cep = request.getParameter("cep");
         String cidade = request.getParameter("cidade");
         String estado = request.getParameter("estado");
-        
+
         // coloca endereco no cliente
         cliente.setEnderecoRua(rua);
         cliente.setEnderecoNumero(numero);
@@ -43,30 +43,30 @@ public class CadastroCliente extends HttpServlet {
         cliente.setEnderecoCep(cep);
         cliente.setEnderecoCidade(cidade);
         cliente.setEnderecoEstado(estado);
-        
+
         String mensagem = "Cadastro efetuado com sucesso!";
-        try{
+
+        try {
             ClienteDAO.getInstance().save(cliente);
-        } catch(UnidaviBsiException e){
+        } catch (UnidaviBsiException e) {
             e.getCause().printStackTrace();
             mensagem = "Não foi possível cadastrar o cliente no banco de dados";
         }
-        
+
         request.setAttribute("mensagem", mensagem);
-        
+
         RequestDispatcher dispatcher = request.getRequestDispatcher("/diego/clienteCompleto.jsp");
         dispatcher.forward(request, response);
-        
+
     }
-    
+
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
-    throws ServletException, IOException {
+            throws ServletException, IOException {
         processRequest(request, response);
     }
-    
+
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
-    throws ServletException, IOException {
+            throws ServletException, IOException {
         processRequest(request, response);
     }
-    
 }

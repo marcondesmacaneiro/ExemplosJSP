@@ -22,16 +22,16 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
         <title>Cliente Completo</title>
-        <link type='text/css' rel='stylesheet' href='<%=request.getContextPath()+"/css/tabelas.css"%>'>
+        <link type='text/css' rel='stylesheet' href='<%=request.getContextPath() + "/css/tabelas.css"%>'>
     </head>
     <body>
         <h1>
             <!-- 3. Imprima aqui a mensagem recuperada no passo 2, utilizando uma expressão. -->
-            <%= mensagem %>
+            <%= mensagem%>
         </h1>
-      
+
         <div class='tabelaGC'>
-        
+
             <table>
                 <tr>
                     <td class='coluna1'></td>
@@ -40,28 +40,28 @@
                 </tr>
             </table>          
             <fieldset>
-                    <legend>Dados do cliente</legend>
-                    <table>
-                        <tr>
-                            <td>Nome:</td>
-                            <td>
-                                <!-- 4. Imprima o atributo nome do bean cliente-->
-                                <%= cliente.getNome() %>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>Telefone:&nbsp;(0000-0000)</td>
-                            <td>
-                                <!-- 5. Imprima o atributo telefone do bean cliente-->
-                                <%= cliente.getTelefone() %>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>e-mail:</td>
-                            <td>
-                                <!-- 6. Imprima o atributo email do bean cliente-->
-                                <%= cliente.getNome() %>
-                            </td>
+                <legend>Dados do cliente</legend>
+                <table>
+                    <tr>
+                        <td>Nome:</td>
+                        <td>
+                            <!-- 4. Imprima o atributo nome do bean cliente-->
+                            <%= cliente.getNome()%>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Telefone:&nbsp;(0000-0000)</td>
+                        <td>
+                            <!-- 5. Imprima o atributo telefone do bean cliente-->
+                            <%= cliente.getTelefone()%>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>e-mail:</td>
+                        <td>
+                            <!-- 6. Imprima o atributo email do bean cliente-->
+                            <%= cliente.getNome()%>
+                        </td>
                     </tr>
                 </table>
             </fieldset>
@@ -72,40 +72,46 @@
                         <td>Rua/Av:</td>
                         <td>
                             <!-- 7. Imprima o atributo enderecoRua do bean cliente-->
-                            <%= cliente.getEnderecoRua() %>
+                            <%= cliente.getEnderecoRua()%>
                         </td>
                         <td>N&uacute;mero:</td>
                         <td>
                             <!-- 8. Imprima o atributo enderecoNumero do bean cliente-->
-                            <%= cliente.getEnderecoNumero() %>
+                            <%= cliente.getEnderecoNumero()%>
                         </td>
                     </tr>
                     <tr>
                         <td>Bairro:</td>
                         <td>
                             <!-- 9. Imprima o atributo enderecoBairro do bean cliente-->
-                            <%= cliente.getEnderecoBairro() %>
+                            <%= cliente.getEnderecoBairro()%>
                         </td>
                         <td>CEP:</td>
                         <td>
                             <!-- 10. Imprima o atributo enderecoCep do bean cliente-->
-                            <%= cliente.getEnderecoCep() %>
+                            <%= cliente.getEnderecoCep()%>
                         </td>
                     </tr>
                     <tr>
                         <td>Cidade:</td>
                         <td>
                             <!-- 11. Imprima o atributo enderecoCidade do bean cliente-->
-                            <%= cliente.getEnderecoCidade() %>
+                            <%= cliente.getEnderecoCidade()%>
                         </td>
                         <td>Estado:</td>
                         <td>
                             <!-- 12. Imprima o atributo enderecoEstado do bean cliente-->
-                            <%= cliente.getEnderecoEstado() %>
+                            <%= cliente.getEnderecoEstado()%>
                         </td>
                     </tr>
                 </table>
             </fieldset>
         </div>  
     </body>
+    <br>
+    <br>
+    <br>
+    <a href='<%=request.getContextPath()%>/diego/cadastroCliente.jsp'> Clique aqui para ir para o Cadastro do Cliente </a>
+    <br>
+    <a href='<%=request.getContextPath()%>/diego/todosClientes.jsp'> Alterar - Excluir Clientes </a>
 </html>
