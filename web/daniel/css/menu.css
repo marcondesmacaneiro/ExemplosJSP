@@ -1,0 +1,18 @@
+/* 
+    Document   : menu
+    Created on : 16/06/2013, 14:38:21
+    Author     : Saturno
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+root { 
+    display: block;
+}
+
+		body {
+			padding:0px;
+			margin:0px;
+		}
+
+	
