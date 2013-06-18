@@ -12,6 +12,8 @@
         <title>JSP Page</title>
     </head>
     <body>
-        <h1>Hello World!</h1>
+       <a href='<%=request.getContextPath()%>/jonathan/cadastroCliente.jsp'> CADASTRAR CLIENTE</a>
+       </br>
+       <a href='<%=request.getContextPath()%>/BuscaClientes'> ALTERAR DADOS E EXCLUIR </a>
     </body>
 </html>
