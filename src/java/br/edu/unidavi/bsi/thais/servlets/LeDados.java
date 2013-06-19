@@ -18,7 +18,7 @@ import javax.servlet.http.HttpServletResponse;
  *
  * @author marcondes
  */
-@WebServlet(name = "LeDados", urlPatterns = {"/digitarEnderecoCliente"})
+@WebServlet(name = "LerDados", urlPatterns = {"/digitarEnderecoCliente"})
 public class LeDados extends HttpServlet {
 
     
@@ -45,12 +45,12 @@ public class LeDados extends HttpServlet {
         }
     }
     
-    @Override
+   @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
     throws ServletException, IOException {
         processRequest(request, response);
     }
-    @Override
+   @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
     throws ServletException, IOException {
         processRequest(request, response);

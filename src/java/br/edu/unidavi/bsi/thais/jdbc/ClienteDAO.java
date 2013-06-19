@@ -1,14 +1,13 @@
 package br.edu.unidavi.bsi.thais.jdbc;
 
+import br.edu.unidavi.bsi.thais.exception.UnidaviBsiException;
+import br.edu.unidavi.bsi.thais.model.Cliente;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.List;
-
-import br.edu.unidavi.bsi.thais.exception.UnidaviBsiException;
-import br.edu.unidavi.bsi.thais.model.Cliente;
 
 public class ClienteDAO extends BaseDAO {
     
@@ -83,13 +82,16 @@ public class ClienteDAO extends BaseDAO {
         return this.getManyByCriteria(sql);
     }
     
+ 
     public Object getByPrimaryKey(Integer id) throws UnidaviBsiException{
         String sql = "select * from clientes where id = " + id;
         List lista = this.getManyByCriteria(sql);
-        if (lista != null && lista.size() > 0)
+        if (lista != null && lista.size() > 0) {
             return (Cliente) lista.get(0);
-        else
+        }
+        else {
             return null;
+        }
     }
     
     public List getByNome(String nome) throws UnidaviBsiException{
@@ -167,4 +169,3 @@ public class ClienteDAO extends BaseDAO {
     }
     
 }
-

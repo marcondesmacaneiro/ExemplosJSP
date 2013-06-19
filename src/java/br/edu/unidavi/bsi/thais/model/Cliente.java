@@ -144,10 +144,12 @@ public class Cliente implements Serializable {
         this.enderecoRua = enderecoRua;
     }
     
+    @Override
     public String toString() {
         return getNome() + " - " + getId();
     }
     
+    @Override
     public boolean equals(Object o) {
         if (o == null) return false;
         if (this == o) return true;
@@ -160,6 +162,7 @@ public class Cliente implements Serializable {
         return result;
     }
     
+    @Override
     public int hashCode() {
         int result = getEmail() != null ? getEmail().hashCode() : 41;
         return result;

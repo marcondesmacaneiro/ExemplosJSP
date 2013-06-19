@@ -5,9 +5,7 @@
         <link type='text/css' rel='stylesheet' href='<%=request.getContextPath()%>/css/tabelas.css'>
     </head>
     <body>
-        
         <div class='tabelaGC'>
-
             <table>
                 <tr>
                     <td class='coluna1'></td>
@@ -21,7 +19,6 @@
             <!-- Verifique a URL no web.xml -->
 
             <form action='<%=request.getContextPath()%>/digitarEnderecoCliente' method='post'>
-
                 <fieldset>
                     <legend>Dados do cliente</legend>
                     <table>
@@ -38,9 +35,7 @@
                     </table>
                     <input type='image' src='<%=request.getContextPath()%>/images/salvar.gif'>                     
                 </fieldset>
-
             </form>
-
         </div>    
     </body>
 </html>

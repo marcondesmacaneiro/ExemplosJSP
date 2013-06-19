@@ -1,8 +1,7 @@
 package br.edu.unidavi.bsi.thais.locator;
 
-import java.sql.*;
-
 import br.edu.unidavi.bsi.thais.exception.UnidaviBsiException;
+import java.sql.*;
 
 
 public class ServiceLocator {

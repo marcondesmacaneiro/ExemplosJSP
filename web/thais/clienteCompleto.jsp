@@ -31,17 +31,17 @@
         </h1>
 
         <div class='tabelaGC'>
-            
             <table>
                 <tr>
                     <td class='coluna1'></td>
                     <td class='coluna2'>Cadastro do Cliente</td>
                     <td class='coluna3'></td>
                 </tr>
-            </table>          
+            </table>      
+
             <fieldset>
-                <legend>Dados do cliente</legend>
                 <table>
+                    <legend>Dados do cliente</legend>
                     <tr>
                         <td>Nome:</td>
                         <td>
@@ -64,8 +64,8 @@
                         </td>
                     </tr>
                 </table>
-          </fieldset>
-            
+            </fieldset>
+
             <fieldset>
                 <legend>Endere&ccedil;o</legend>
                 <table>
@@ -107,13 +107,22 @@
                     </tr> <br><br>
                     <tr>
                         <td>
-                            <input  type="submit" value="Alterar" > 
-                            <input  type="submit" value="Deletar">
-                            <br> <br>
+                            <br>             
+                            <form action='<%=request.getContextPath()%>/alterarCadastroThais' method='post'>
+                                <input type="text" name="id" value="<%= cliente.getId()%>" > 
+                                <input type='image' src='<%=request.getContextPath()%>/thais/images/alterar.gif'>
+                            </form>
+                            <br>
                         </td>
                     </tr>
-                </table>
+                </table>  
             </fieldset>
+
+            <form action='<%=request.getContextPath()%>/deletar' method='post'>
+                <input type="text" name="id" value="<%=cliente.getId()%>">
+                <input type='image' src='<%=request.getContextPath()%>/thais/images/excluir.jpg'>
+            </form>
+
         </div>  
     </body>
 </html>
