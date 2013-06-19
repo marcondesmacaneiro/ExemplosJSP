@@ -12,6 +12,8 @@
         <title>JSP Page</title>
     </head>
     <body>
-        <h1>Hello World!</h1>
+       <a href='<%=request.getContextPath()%>/willian/jsp/cadastroCliente.jsp'> Clique aqui para ir para o Cadastro do Cliente. </a>
+       <br>
+       <a href='<%=request.getContextPath()%>/ListaCliente'> Clique aqui para ir para listar os Clientes. </a>
     </body>
 </html>
