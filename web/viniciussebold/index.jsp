@@ -12,6 +12,7 @@
         <title>JSP Page</title>
     </head>
     <body>
-        <h1>Hello World!</h1>
+       <a href='<%=request.getContextPath()%>/viniciussebold/cadastroCliente.jsp'> Clique aqui para ir para o Cadastro do Cliente </a><br>
+       <a href='<%=request.getContextPath()%>/viniciussebold/listarclientes.jsp'> Clique aqui para ir para o Clientes Cadastrados </a>
     </body>
 </html>
