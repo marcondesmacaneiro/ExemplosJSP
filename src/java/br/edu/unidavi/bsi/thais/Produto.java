@@ -4,12 +4,10 @@
  */
 package br.edu.unidavi.bsi.thais;
 
-import br.edu.unidavi.bsi.gustavo.*;
-
 /**
  *
  * @author marcondes
  */
 public class Produto {
-    
+ 
 }
